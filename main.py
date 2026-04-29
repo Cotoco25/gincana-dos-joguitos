@@ -30,7 +30,7 @@ clock=time.Clock()
 
 
 
-temas = ["animais", "comidas/bebidas", "objetos", "profissoes", "marcas famosas"]
+temas = ["animais", "comidas/bebidas", "objetos", "profissoes", "marcas famosas", "PUC", "PUC RIO"]
 tema_escolhido = random.choice(temas)
 vidas=6
 if tema_escolhido == "animais":
@@ -47,6 +47,13 @@ if tema_escolhido == "profissoes":
 
 if tema_escolhido == "marcas famosas":
     lista_palavras = ["nike", "adidas", "apple", "samsung", "cocacola", "pepsi", "mcdonalds", "starbucks", "google", "facebook", "amazon", "netflix", "disney", "honda", "toyota", "ford", "chevrolet", "bmw", "benz", "audi"]
+
+if tema_escolhido == "PUC":
+        lista_palavras = ["juiza", "joisa", "bicalho", "strogonoff", "julianofloss", "mralkmin", "dralkmin", "mrcookie", "ze", "fecundacao"]
+
+if tema_escolhido == "PUC RIO":
+    lista_palavras = ["juiza", "joisa", "bicalho", "strogonoff", "julianofloss", "mralkmin", "dralkmin", "mrcookie", "ze", "fecundacao"]
+    
 
 palavra_escolhida = random.choice(lista_palavras)
 letras_acertadas = ["_"] * len(palavra_escolhida)
@@ -83,6 +90,13 @@ def reiniciar_jogo():
         lista_palavras = ["medico", "engenheiro", "professor", "advogado", "enfermeiro", "policial", "bombeiro", "piloto", "cozinheiro", "jornalista", "programador", "arquiteto", "dentista", "veterinario", "psicologo", "musico", "artista", "atleta", "cientista", "agricultor", "bicalho"]
     if tema_escolhido == "marcas famosas":
         lista_palavras = ["nike", "adidas", "apple", "samsung", "cocacola", "pepsi", "mcdonalds", "starbucks", "google", "facebook", "amazon", "netflix", "disney", "honda", "toyota", "ford", "chevrolet", "bmw", "benz", "audi"]
+    
+    if tema_escolhido == "PUC":
+        lista_palavras = ["juiza", "joisa", "bicalho", "strogonoff", "julianofloss", "mralkmin", "dralkmin", "mrcookie", "ze", "fecundacao"]
+
+    if tema_escolhido == "PUC RIO":
+        lista_palavras = ["juiza", "joisa", "bicalho", "strogonoff", "julianofloss", "mralkmin", "dralkmin", "mrcookie", "ze", "fecundacao"]
+    
     palavra_escolhida = random.choice(lista_palavras)
     letras_acertadas = ["_"] * len(palavra_escolhida)
     vidas = 6
